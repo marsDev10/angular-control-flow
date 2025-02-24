@@ -1,0 +1,15 @@
+@defer( when isContentReady ){
+  <p>
+    Component
+  </p>
+} @loading (after 100ms; minimum 1s){
+  <p>
+    Loading...
+  </p>
+} @placeholder {
+  <p>
+    Setting up the content
+  </p>
+} @error {
+  <p>Sorry, we could't load the component. Please try again later</p>
+}
